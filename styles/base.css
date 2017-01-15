@@ -339,10 +339,11 @@ ul li {
 
 .menu-formal {
   color:#E2E7D6;
-  background: #4F1670;
-  padding: 4%;
+  background: #bd414c;
+  padding: 20px;
   margin-top: 10%;
   margin-bottom: 10%;
+  border-radius: 3px;
 
 }
 
@@ -350,9 +351,10 @@ ul li {
 .menu-informal {
   color:#F5F0FD;
   background: #969C77;
-  padding: 4%;
+  padding: 20px;
  /* margin: 5%;*/
   margin-bottom: 10%;
+  border-radius: 3px;
 
 }
 
@@ -385,17 +387,22 @@ ul li {
 .somos {
   color:#FFFEFF;
   background: #BD414C;
+  border-radius: 3px;
 
 }
 
 .hacemos {
   color:#FFFEFF;
   background: #8CB161;
+  border-radius: 3px;
+
 }
 
 .proveemos {
   color:#FFFEFF;
   background: #4F3526;
+  border-radius: 3px;
+
 }
 
 #nos-eligen {
@@ -446,7 +453,7 @@ ul.column {
 
 
 
-@media (max-width: 870px) {
+@media (max-width: 883px) {
   .main-nav {
     width: 90vw;
 
@@ -483,5 +490,14 @@ ul.column {
   }
    .mobile-margin-top-0 {
     margin-top: 0px !important;
+  }
+   .mobile-margin-top-15 {
+    margin-top: 15px !important;
+  }
+  div#logo.column { 
+    margin-bottom: 0;
+  }
+  img.logo {
+    margin-bottom: 0;
   }
 }
