@@ -1,0 +1,463 @@
+/* Layout
+   ========================================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+}
+
+body {
+  background: url('img/agsquare.png'), #FFFFFE;
+  color: #555;
+  margin:0;
+  padding:0;
+   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 54rem;
+  width: 90%;
+  flex: 1;
+
+}
+
+.space {
+  margin: 5%;
+  padding:5%;
+}
+
+
+/* Header
+   ========================================================================== */
+
+
+#main-header {
+  padding-top: 10px;
+ /* padding-bottom: 5px; */
+}
+ 
+.main-nav {
+  width: 40vw;
+    float: right;
+    margin-top: 5px;
+}
+
+.main-nav a {
+  display: inline-block;
+  text-align: center;
+  color: #353D3B;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  border-right:1px solid black;
+  float: right;
+  text-transform: bold;
+  text-decoration: none;
+}
+
+
+
+.main-nav a.selected, .main-nav a:hover {
+  color: #FF3510;
+  text-decoration: none;
+
+}
+
+
+.intro { margin: 2rem 0; }
+
+@media (min-width: 870px) {
+  .intro { margin: 4rem 0; }
+}
+
+.mobile {
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+@media (min-width: 870px) {
+  .mobile { max-width: 250px; }
+}
+
+.local {
+  margin-top: 0;
+}
+
+
+/* Section
+   ========================================================================== */
+
+section {
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+section:first-of-type { border-top: none; }
+
+@media (min-width: 870px) {
+  section { padding: 4rem 0; }
+}
+
+/* Mobile First Grid
+   ========================================================================== */
+
+.column { margin-bottom: 1.5rem; }
+
+@media (min-width: 870px) {
+  .column {
+    float: left;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.one-half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }
+}
+
+/* Typography
+   ========================================================================== */
+
+h2 {
+  font-family: 'Averia Serif Libre', cursive;
+  color: #FFF4F0;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+h3 {
+  font-family: 'Averia Serif Libre', cursive;
+  color: #FF3510;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+p {
+  text-align: center;
+
+}
+#intro-p1 {
+  padding: 0.0625em;
+
+}
+
+
+
+@media (min-width: 870px) {
+  h1 { font-size: 1.5rem; }
+}
+
+blockquote { margin: 0; }
+
+blockquote p {
+  color: #bbb;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+cite { color: #bbb; }
+
+/* Lists
+   ========================================================================== */
+
+ul {
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 870px) {
+  ul { display: inline-block; }
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+/* Links
+   ========================================================================== */
+
+a {
+  color: #497bad;
+  text-decoration: none;
+  line-height: 1.7em;
+}
+
+a:hover { text-decoration: underline; }
+
+
+
+/* Elements
+   ========================================================================== */
+
+
+
+img {
+  display: block;
+  height: auto;
+  margin: 0 auto 1.5rem auto;
+  width: 100%;
+}
+
+.rwd {
+  margin: 0 auto 1.5rem auto;
+  max-width: 440px;
+}
+
+section {
+  padding-bottom:3rem;
+}
+
+/* Utilities
+   ========================================================================== */
+
+.remove-padding { padding-bottom: 0; }
+.remove-border { border: none; }
+
+/* Clearfix by Nicolas Gallagher
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+@media all and (max-width: 600px) {
+    .hide-image {
+        display:none;
+    }
+    .hideme {
+      display: none;
+    }
+    #footer-intro {
+      display: none;
+    }
+
+  .main-nav ul {
+    margin: 0px 0px;
+    float: right;
+    padding-bottom: 5px;
+  }
+  .main-nav {
+    text-align: left;
+  }
+
+  .main-nav li{
+    display: inline-block;
+
+  }
+
+  .main-nav a {
+  }
+}
+
+  
+
+footer {
+  background-color: #E0DCD8;
+  color: #2F2C3F;
+  margin:0;
+  padding: 0.3rem 0;
+}
+
+#consultas {
+  font-family: 'Nunito', sans-serif;
+  color: #1B2D40;
+}
+
+/* Home Page
+   ========================================================================== */
+
+ #feat-img1, #feat-img2, #feat-img3 {
+ 
+
+}
+
+
+.fa-mobile-phone, .fa-envelope, .fa-map-marker {
+  color: #365B7F;
+}
+
+#secondary-content {
+  margin-top: -15px;
+  margin-bottom: 10%;
+}
+
+#footer-intro {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer-p {
+  margin-top: 0;
+  margin-bottom: -15px;
+}
+
+/* Menu Page
+   ========================================================================== */
+.menu-background {
+background: url('img/witewall_3.png'), #FFFFFE;
+}
+
+h1 {
+  font-family: 'Raleway', arial, serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px #000;
+  text-align: center;
+}
+
+ul li {
+  font-size: 1em;
+  line-height: 2em; 
+  font-variant: small-caps;
+  }
+
+.menu-formal {
+  color:#E2E7D6;
+  background: #4F1670;
+  padding: 4%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+
+.menu-informal {
+  color:#F5F0FD;
+  background: #969C77;
+  padding: 4%;
+  margin: 5%;
+  margin-bottom: 10%;
+
+}
+
+.menu-list li {
+  list-style: none;
+  text-align: left;
+  line-height: 1.7em;
+  color: #28262B;
+  font-size: 1.1em;
+  font-variant: small-caps;
+}
+
+
+
+/*  Clientes
+   ========================================================================== */
+
+   h4 {
+    color: #E30002;
+    text-align: center;
+    font-family: 'Raleway', arial, serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #000;
+    padding: 10px;
+  
+
+   }
+
+.somos {
+  color:#FFFEFF;
+  background: #BD414C;
+
+}
+
+.hacemos {
+  color:#FFFEFF;
+  background: #8CB161;
+}
+
+.proveemos {
+  color:#FFFEFF;
+  background: #4F3526;
+}
+
+#nos-eligen {
+  background: #224040;
+  color: #FFFEFF;
+
+}
+
+
+/*
+.list li {
+  display: inline-block;
+  list-style: circle;
+}
+
+.list {
+  margin: 2% auto;
+  padding: 2% 2%;
+  border-radius: 10%;
+  text-align: center;
+}
+*/
+.cuadrado {
+  margin-top: 180px;
+}
+
+#main-content {
+  font-family: 'Nunito', sans-serif;
+  padding: 0 3% 0 3%;
+}
+div #logo .column {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.logo {
+  width: 200px;
+}
+
+#main-header .column {
+  padding: 0;
+}
+
+ul.column {
+  float: right !important;
+}
+
+
+@media (max-width: 870px) {
+  .main-nav {
+    width: 90vw;
+
+      padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .hide-m {
+    display: none;
+  }
+ img.cookie {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
