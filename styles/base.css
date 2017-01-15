@@ -351,7 +351,7 @@ ul li {
   color:#F5F0FD;
   background: #969C77;
   padding: 4%;
-  margin: 5%;
+ /* margin: 5%;*/
   margin-bottom: 10%;
 
 }
@@ -363,6 +363,7 @@ ul li {
   color: #28262B;
   font-size: 1.1em;
   font-variant: small-caps;
+  padding-left: 2%;
 }
 
 
@@ -443,6 +444,8 @@ ul.column {
 }
 
 
+
+
 @media (max-width: 870px) {
   .main-nav {
     width: 90vw;
@@ -459,5 +462,26 @@ ul.column {
  img.cookie {
     width: 300px;
     margin: 0 auto;
+  }
+
+  .menu-formal {
+    margin-top: 0;
+    margin-bottom: 6%;
+  }
+  .menu-informal {
+    margin-bottom: 6%;
+  }
+  section {
+    padding: 0;
+  }
+
+  .mobile-margin-bottom-10 {
+    margin-bottom: 10% !important;
+  }
+  .mobile-margin-top--47 {
+    margin-top: -47px !important;
+  }
+   .mobile-margin-top-0 {
+    margin-top: 0px !important;
   }
 }
