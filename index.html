@@ -3,9 +3,12 @@
 	<head>
 		<meta charset="utf-8">
     	<title>Clarisimo | Catering</title>
-		<link rel="stylesheet" href="styles/base.css"> 
+		
 		<link rel="stylesheet" href="styles/normalize.css">
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- <link rel="stylesheet" href="styles/base.min.css">  -->
+		<link rel="stylesheet" href="styles/base.css"> 
+
 		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 		<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre' rel='stylesheet' type='text/css'>
@@ -30,7 +33,7 @@
 		</div>
 <div class="row clearfix">
 	<div class="column two-thirds feat-img">
-			<div class="">
+			<div class="fade">
 	  		<img id="feat-img1" src="images/postre.jpg" alt="postre"/>
 			</div>
 			<div class="">
@@ -45,22 +48,36 @@
 				
 					<p id="intro-p1"> Parera 189 Buenos Aires, C.A.B.A <br><i class="fa fa-map-marker fa-lg">&nbsp;</i><strong><a target="_blank" href="https://maps.google.com/maps?q=Parera+189,+Buenos+Aires,+Argentina&hl=en&ll=-34.590559,-58.385006&spn=0.002756,0.004935&sll=41.833733,-87.731964&sspn=0.638486,1.263428&oq=parera+189&hnear=Parera+189,+Retiro,+Buenos+Aires,+Argentina&t=m&z=18">(mapa)</a> </strong><br><i class="fa fa-mobile-phone fa-lg"></i><strong><a href="tel:4815-3579">&nbsp;4815-3579</a></strong><br> <i class="fa fa-envelope fa-lg"></i><strong><a href="mailto: terreraclarisa@yahoo.com.ar">&nbsp;terreraclarisa@yahoo.com.ar</a></strong></p>
 				<h3>Catering</h3>	
-					<p id="intro-p1">Eventos Sociales: Desayunos &#8226; Almuerzos &#8226; Cenas &#8226; Bautismos &#8226; Comuniones &#8226; Casamientos &#8226; Chef a Domicilio &#8226; Sushiman</p>
+					<p id="intro-p1">Eventos Sociales: Desayunos &#8226; Almuerzos &#8226; Cenas &#8226; Bautismos &#8226; Comuniones &#8226; Casamientos &#8226; Chef&nbsp;a&nbsp;Domicilio &#8226; Sushiman</p>
 				<hr>
-					<p id="intro-p1">Eventos Corporativos: Desayunos &#8226; Coffee Breaks &#8226; Jornadas de Trabajo &#8226; Jornadas de Capacitaci&oacute;n &#8226; Cocktails &#8226; Almuerzos &#8226; Cenas</p>
+					<p id="intro-p1">Eventos Corporativos: Desayunos &#8226; Coffee Breaks &#8226; Jornadas&nbsp;de&nbsp;Trabajo &#8226; Jornadas&nbsp;de&nbsp;Capacitaci&oacute;n &#8226; Cocktails &#8226; Almuerzos&nbsp;&#8226;&nbsp;Cenas</p>
 			</div>
 </div>
 </div>
 </div>
 
-			<footer id="footer-intro">
+			<!-- <footer id="footer-intro">
 				<div class="row">
 					<div>
 				<p id="consultas" class="footer-p"> &iquest;Consultas? &iquest;Preguntas? No dudes en contactarnos: </p>
-				<p><i class="fa fa-mobile-phone fa-lg"></i><strong><a href="tel:4815-3579">&nbsp;4815-3579</a></strong>&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope fa-lg"></i><strong><a href="mailto:terreraclarisa@yahoo.com.ar">&nbsp;&nbsp;terreraclarisa@yahoo.com.ar</a></strong></p>
+				<p><i class="fa fa-mobile-phone fa-lg"></i><strong>&nbsp;<a href="tel:4815-3579">4815-3579</a></strong>&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope fa-lg"></i><strong>&nbsp;&nbsp;<a href="mailto:terreraclarisa@yahoo.com.ar">terreraclarisa@yahoo.com.ar</a></strong>&nbsp;&nbsp;<a href="https://www.facebook.com/clarisimoparera/?fref=ts"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>&nbsp;<a href="https://www.facebook.com/clarisimoparera/?fref=ts"><strong>Seguinos!</strong></a></p>
+
+					</div>
+				</div>
+			</footer> -->
+			    	<footer id="footer-intro">
+				<div class="row">
+					<div>
+					<p id="consultas" class="footer-p"> &iquest;Consultas? &iquest;Preguntas? No dudes en contactarnos: </p>
+					<ul class="footer-ul">
+					<li><i class="fa fa-phone fa-lg"></i><strong>&nbsp;<a href="tel:4815-3579">&nbsp;4815-3579&nbsp;&nbsp;</a></strong>
+					<li><i class="fa fa-envelope-o fa-lg"></i><strong>&nbsp;&nbsp;<a href="mailto:terreraclarisa@yahoo.com.ar">terreraclarisa@yahoo.com.ar</a></strong></li>
+					<li><a href="https://www.facebook.com/clarisimoparera/?fref=ts"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.facebook.com/clarisimoparera/?fref=ts" target="_blank"><strong>Seguinos!</strong></a></p></li></ul>
+
 					</div>
 				</div>
 			</footer>
+		
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="slick/slick.min.js"></script>
@@ -72,8 +89,11 @@
 $(document).ready(function(){
 $('.feat-img').slick({
 	autoplay: true,
-	speed: 2500
+	speed: 5000,
+	fade: true,
 }); 
+
+
 });
 </script>				
 
